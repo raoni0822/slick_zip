@@ -1,0 +1,66 @@
+* {
+    outline: 1px solid blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.mainSlider .itm h2 {
+    opacity: 0;
+    transform: translate(0, 100px);
+}
+
+.mainSlider .itm.on h2 {
+    transform: translate(0, 0);
+    opacity: 1;
+    color: #f00;
+    transition: 1s;
+}
+
+.productSilder figure {
+    padding: 60px 15px;
+}
+
+.productSilder figure img {
+    border: 1px solid tomato;
+}
+
+.productSilder figure.on img {
+    border: 10px solid tomato;
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+.syncslider {
+    position: relative;
+}
+
+.syncslider .bottom {}
+
+.syncslider .thum {
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    width: 600px;
+    transform: translate(0, -50%);
+}
+
+.syncslider .thum figure {
+    margin: 0 20px 0 0;
+    border: 3px solid tomato;
+}
+
+.syncslider .slogan {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    color: #fff;
+    width: 600px;
+}
